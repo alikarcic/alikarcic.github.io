@@ -1,6 +1,7 @@
 # alikarcic.github.io
 
-# Mapping News Consumption in Bosnia
+# Mapping News Consumption in Bosnia 
+September 2024
 
 ## Introduction
 

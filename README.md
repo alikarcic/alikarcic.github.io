@@ -3,26 +3,19 @@
 # Mapping News Consumption in Bosnia 
 September 2024
 
-## Introduction
+## What is this project about?
 
-This project explores **news consumption patterns in Bosnia**, focusing on one of the most popular web-based news portals, **klix.ba**. By scraping the entire database of articles published on the site, we aim to gain insights into:
+More than ever before, people rely on the internet for their daily news and information. With the rapid proliferation of internet access across the globe, more and more people are turning away from traditional, analogue, news outlets in favor of social media such as Twitter and Facebook, or large online-only news platforms. Given that these web-based news portals have become the primary source of information for a majority of the population, they are naturally of great interest to social scientists, who wish to know more about the media landscape, and what societal priorities that media landscape reflects. 
 
-- The types of news **Bosnians read most frequently**.
-- The types of news **published most often**.
-- The **most popular topics** in Bosnian news.
-- How **trends in news consumption and publication** have changed over time.
-
-## Data Source
-
-The data is sourced from **klix.ba**, which is widely regarded as a significant player in the **Bosnian media landscape**. By analyzing this rich dataset of articles, we can uncover valuable trends and insights into **Bosnian media consumption**.
+This project aims to make use of the easily accessible online news data by focusing on **[klix.ba](https://klix.ba)**, the most visited and most influental news portal in Bosnia. By scraping, systematizing, and analyzing all available news articles on the website, I am to map out what type of news Bosnians engage with, and how they engage with it, hopefully providing a unique insight into the broader media trends in the country. The reason for choosing Bosnia is that general efforts into collecting and archiving news articles have been largely absent to my knowledge, underscoring the importance of such work in the future. 
 
 ## Key Objectives
 
-1. **Identify Popular Content**  
+1. **Identification of Popular Content**  
    What types of articles do Bosnians read the most?  
    What content generates the highest engagement?
 
-2. **Analyze Published News**  
+2. **Analysis of Published News**  
    What types of news are published most frequently?  
    Are there patterns in the types of articles over time?
 
@@ -32,7 +25,12 @@ The data is sourced from **klix.ba**, which is widely regarded as a significant 
 
 4. **Trends Over Time**  
    How have news topics and consumption habits evolved?  
-   Can we identify shifts in **media focus** or **public interest**?
+   Can we identify shifts in media focus or public interest?
+
+## Data Source
+
+The data is completely sourced from klix.ba via a python webscraper, written using BeautifulSoup. The scraping process was based on a pre-existing list of urls, compiled by Seferovic8. The 
+
 
 ## Methodology
 

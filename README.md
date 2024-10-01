@@ -1,5 +1,5 @@
-<link rel="stylesheet" type="text/css" href="/css/style.css">
-   
+<link rel="stylesheet" type="text/css" href="css assets/styles.css">
+
 # alikarcic.github.io
 
 # Mapping News Consumption in Bosnia 

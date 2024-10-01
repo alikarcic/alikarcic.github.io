@@ -1,5 +1,3 @@
-
-<div style="background-color: blue; padding: 20px; color: white;">
    
 # alikarcic.github.io
 
@@ -44,5 +42,3 @@ The data is completely sourced from klix.ba via a python webscraper, written usi
 ## Conclusion
 
 Through this project, we seek to understand the **media landscape in Bosnia** and provide insights into how news is consumed and produced, offering a reflection of **Bosnian society’s interests** and **media trends**.
-
-</div>

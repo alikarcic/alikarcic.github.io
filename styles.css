@@ -1,7 +1,7 @@
 @import "{{ site.theme }}"; /* Importing the site theme */
 
 body {
-    background-color: #00bbf0; /* Light blue background */
+    background-color: #007FFF; /* Light blue background */
     color: white; /* Optional: Changes text color for better readability */
     margin: 0; /* Optional: Removes default margins */
     padding: 20px; /* Optional: Adds padding around the content */

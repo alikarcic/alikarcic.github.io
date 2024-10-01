@@ -1,0 +1,6 @@
+body {
+    background-color: blue;
+    color: white; /* Optional: Changes text color for better readability */
+    margin: 0; /* Optional: Removes default margins */
+    padding: 20px; /* Optional: Adds padding around the content */
+}

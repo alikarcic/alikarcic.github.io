@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="css assets/styles.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 # alikarcic.github.io
 

@@ -1,10 +1,10 @@
----
----
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap'); /* Importing Open Sans font */
+@import "{{ site.theme }}"; /* Importing the site theme */
 
-@import "{{ site.theme }}";
 body {
-    background-color: #8dc6ff;
+    background-color: #8dc6ff; /* Light blue background */
     color: white; /* Optional: Changes text color for better readability */
     margin: 0; /* Optional: Removes default margins */
     padding: 20px; /* Optional: Adds padding around the content */
+    font-family: 'Open Sans', sans-serif; /* Applying the softer font */
 }

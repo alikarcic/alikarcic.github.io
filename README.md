@@ -1,19 +1,5 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 
----
-layout: default
----
-
-<style>
-body {
-    font-family: 'Open Sans', sans-serif; /* Softer font */
-    background-color: red; /* Background color */
-    color: white; /* Text color */
-    margin: 0; /* Removes default margins */
-    padding: 20px; /* Adds padding around the content */
-}
-</style>
-
 # alikarcic.github.io
 
 # Mapping News Consumption in Bosnia 

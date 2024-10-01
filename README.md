@@ -2,6 +2,11 @@
 
 # alikarcic.github.io
 
+<div class="profile">
+  <h1>Alika</h1>
+  <img src="https://github.com/alikarcic/alikarcic.github.io/blob/main/kings_mood_izetbegovic.jpg?raw=true" alt="Alika's Mood">
+</div>
+
 # Mapping News Consumption in Bosnia 
 September 2024
 

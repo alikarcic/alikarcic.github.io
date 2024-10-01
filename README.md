@@ -1,5 +1,9 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
-
+<style>
+body {
+    font-family: 'Arial', sans-serif; /* Change to your desired font */
+}
+</style>
 # alikarcic.github.io
 
 # Mapping News Consumption in Bosnia 

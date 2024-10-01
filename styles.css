@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap'); /* Importing Open Sans font */
 @import "{{ site.theme }}"; /* Importing the site theme */
 
 body {
@@ -6,5 +5,5 @@ body {
     color: white; /* Optional: Changes text color for better readability */
     margin: 0; /* Optional: Removes default margins */
     padding: 20px; /* Optional: Adds padding around the content */
-    font-family: 'Open Sans', sans-serif; /* Applying the softer font */
+    font-family: Arial, sans-serif; /* Applying a common softer font */
 }

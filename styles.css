@@ -11,6 +11,11 @@ body {
     padding: 20px; /* Optional: Adds padding around the content */
 }
 
+/* Flexbox container for layout */
+.container {
+    display: flex; /* Use flexbox to align items horizontally */
+}
+
 /* CSS for profile section */
 .profile {
     display: flex;
@@ -19,8 +24,7 @@ body {
     justify-content: center;
     text-align: center;
     width: 200px;
-    margin-left: 20px;
-    padding: 20px;
+    margin-right: 20px; /* Space between profile and content */
 }
 
 .profile img {
@@ -29,4 +33,8 @@ body {
     border-radius: 50%; /* Makes the image round */
     object-fit: cover;
     margin-top: 10px;
+}
+
+.content {
+    flex: 1; /* Allow content to take up remaining space */
 }

@@ -1,3 +1,7 @@
+---
+---
+
+@import "{{ site.theme }}";
 body {
     background-color: blue;
     color: white; /* Optional: Changes text color for better readability */

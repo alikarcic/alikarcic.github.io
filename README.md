@@ -40,6 +40,31 @@ The data is completely sourced from klix.ba via a python webscraper, written usi
 - **Text Analysis**: Natural Language Processing (NLP) techniques are employed to identify key topics, patterns, and trends.
 - **Time Series Analysis**: Trends over time are evaluated to determine shifts in news focus and audience interests.
 
+
+
+![My Plot](images/dust.png)
+
+
+
+![My Plot](images/copper.png)
+
+
+![My Plot](images/lilac.png)
+
+
+![My Plot](images/sky.png)
+
+
+![My Plot](images/solar.png)
+
+
+
+
+
+
+
+
+
 ## Conclusion
 
 Through this project, we seek to understand the **media landscape in Bosnia** and provide insights into how news is consumed and produced, offering a reflection of **Bosnian society’s interests** and **media trends**.

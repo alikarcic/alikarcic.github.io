@@ -42,19 +42,6 @@ The data is completely sourced from klix.ba via a python webscraper, written usi
 
 
 
-![My Plot](images/dust.png)
-
-
-
-![My Plot](images/copper.png)
-
-
-![My Plot](images/lilac.png)
-
-
-![My Plot](images/sky.png)
-
-
 ![My Plot](images/solar.png)
 
 

@@ -45,7 +45,13 @@ The data is completely sourced from klix.ba via a python webscraper, written usi
 ![My Plot](images/solar.png)
 
 
+![My Plot](images/stacked_area.png)
 
+
+![My Plot](images/comments_time_scatter.png)
+
+
+![My Plot](images/articles_country_map.png)
 
 
 

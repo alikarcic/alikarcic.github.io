@@ -6,4 +6,12 @@ body {
     margin: 0; /* Optional: Removes default margins */
     padding: 20px; /* Optional: Adds padding around the content */
     font-family: Arial, sans-serif; /* Applying a common softer font */
+    
+    max-width: 800px; /* Set a maximum width for the body */
+    margin: 0 auto;   /* Center the content horizontally */
+}
+
+img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintain aspect ratio */
 }

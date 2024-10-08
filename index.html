@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapping News Consumption in Bosnia</title>
     <link rel="stylesheet" type="text/css" href="styles.css">  <!-- Your existing CSS -->
+    <style>
+        body {
+            max-width: 800px; /* Change this value to adjust width */
+            margin: 0 auto;   /* Center the content */
+            padding: 20px;    /* Add some padding */
+        }
+
+        img {
+            max-width: 100%;  /* Ensure images are responsive */
+            height: auto;      /* Maintain aspect ratio */
+        }
+
+        /* Optional: Smaller images */
+        .small-img {
+            width: 50%;  /* Adjust this value to make images smaller */
+        }
+    </style>
 </head>
 <body>
 
@@ -35,10 +52,10 @@
     </ul>
 
     <h2>Visualizations</h2>
-    <img src="images/solar.png" alt="Solar Plot">
-    <img src="images/stacked_area.png" alt="Stacked Area Plot">
-    <img src="images/comments_time_scatter.png" alt="Comments Time Scatter Plot">
-    <img src="images/articles_country_map.png" alt="Articles Country Map">
+    <img src="images/solar.png" alt="Solar Plot" class="small-img">
+    <img src="images/stacked_area.png" alt="Stacked Area Plot" class="small-img">
+    <img src="images/comments_time_scatter.png" alt="Comments Time Scatter Plot" class="small-img">
+    <img src="images/articles_country_map.png" alt="Articles Country Map" class="small-img">
 
     <h2>Interactive Map</h2>
     <iframe src="my_interactive_map.html" width="100%" height="600" style="border:none;"></iframe>

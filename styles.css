@@ -13,6 +13,6 @@ body {
 }
 
 img {
-    max-width: 80%; /* Ensure images are responsive and adjust the size */
+    max-width: 140%; /* Ensure images are responsive and adjust the size */
     height: auto; /* Maintain aspect ratio */
 }

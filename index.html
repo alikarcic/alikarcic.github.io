@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Interactive Map</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping News Consumption in Bosnia</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">  <!-- Your existing CSS -->
 </head>
 <body>
-  <h1>My Interactive Map</h1>
-  <iframe src="images/interactive_map_1.html" width="100%" height="600" style="border:none;"></iframe>
+
+    <h1>Mapping News Consumption in Bosnia</h1>
+    <p>September 2024</p>
+
+    <h2>What is this project about?</h2>
+    <p>More than ever before, people rely on the internet for their daily news and information. With the rapid proliferation of internet access across the globe, more and more people are turning away from traditional, analogue, news outlets in favor of social media such as Twitter and Facebook, or large online-only news platforms. Given that these web-based news portals have become the primary source of information for a majority of the population, they are naturally of great interest to social scientists, who wish to know more about the media landscape, and what societal priorities that media landscape reflects.</p>
+
+    <p>This project aims to make use of the easily accessible online news data by focusing on <strong><a href="https://klix.ba">klix.ba</a></strong>, the most visited and most influential news portal in Bosnia. By scraping, systematizing, and analyzing all available news articles on the website, I am to map out what type of news Bosnians engage with, and how they engage with it, hopefully providing a unique insight into the broader media trends in the country. The reason for choosing Bosnia is that general efforts into collecting and archiving news articles have been largely absent to my knowledge, underscoring the importance of such work in the future.</p>
+
+    <h2>Key Objectives</h2>
+    <ol>
+        <li><strong>Identification of Popular Content</strong><br>What types of articles do Bosnians read the most? What content generates the highest engagement?</li>
+        <li><strong>Analysis of Published News</strong><br>What types of news are published most frequently? Are there patterns in the types of articles over time?</li>
+        <li><strong>Popular Topics</strong><br>Which topics dominate the news landscape? Are there seasonal or event-driven spikes in certain topics?</li>
+        <li><strong>Trends Over Time</strong><br>How have news topics and consumption habits evolved? Can we identify shifts in media focus or public interest?</li>
+    </ol>
+
+    <h2>Data Source</h2>
+    <p>The data is completely sourced from klix.ba via a python web scraper, written using BeautifulSoup.</p>
+
+    <h2>Methodology</h2>
+    <ul>
+        <li><strong>Web Scraping:</strong> Articles are scraped from <strong>klix.ba</strong> using Python and relevant libraries for web scraping.</li>
+        <li><strong>Text Analysis:</strong> Natural Language Processing (NLP) techniques are employed to identify key topics, patterns, and trends.</li>
+        <li><strong>Time Series Analysis:</strong> Trends over time are evaluated to determine shifts in news focus and audience interests.</li>
+    </ul>
+
+    <h2>Visualizations</h2>
+    <img src="images/solar.png" alt="Solar Plot">
+    <img src="images/stacked_area.png" alt="Stacked Area Plot">
+    <img src="images/comments_time_scatter.png" alt="Comments Time Scatter Plot">
+    <img src="images/articles_country_map.png" alt="Articles Country Map">
+
+    <h2>Interactive Map</h2>
+    <iframe src="my_interactive_map.html" width="100%" height="600" style="border:none;"></iframe>
+
+    <h2>Conclusion</h2>
+    <p>Through this project, we seek to understand the <strong>media landscape in Bosnia</strong> and provide insights into how news is consumed and produced, offering a reflection of <strong>Bosnian society’s interests</strong> and <strong>media trends</strong>.</p>
+
 </body>
 </html>
-

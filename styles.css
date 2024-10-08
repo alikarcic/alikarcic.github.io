@@ -9,9 +9,10 @@ body {
     
     max-width: 800px; /* Set a maximum width for the body */
     margin: 0 auto;   /* Center the content horizontally */
+    line-height: 1.5; /* Increase line spacing to 1.5 */
 }
 
 img {
-    max-width: 100%; /* Ensures images are responsive */
+    max-width: 80%; /* Ensure images are responsive and adjust the size */
     height: auto; /* Maintain aspect ratio */
 }

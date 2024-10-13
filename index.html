@@ -40,7 +40,7 @@
         hopefully providing a unique insight into the broader media trends in the country. The reason for choosing Bosnia is that general efforts into collecting and archiving news articles 
         have been largely absent to my knowledge, underscoring the importance of such work in the future.</p>
 
-    <h2>Key Objectives</h2>
+    <h2>Key Questions</h2>
     <ol>
         <li><strong>Engagement with the News</strong><br>What types of articles do Bosnians read the most? What content generates the highest engagement?</li>
         <li><strong>Identification of Popular Topics</strong><br>What types of news are published most frequently? Has the news agenda changed over time?</li>
@@ -50,17 +50,17 @@
         <li><strong>Sentiment Analysis</strong><br>Are news articles mostly positive or negative in sentiment? How has sentiment changed over time, and across topics?</li>
     </ol>
 
-    <h2>Data Source</h2>
-    <p>The data is completely sourced from klix.ba via a python web scraper, written using BeautifulSoup.</p>
+    <h2>Data Sources</h2>
+    <p>The data is sourced directly from klix.ba via a python web scraper, written using BeautifulSoup. The analysis is based on this web scraped data, in addition to the initial data collection
+        done by <strong><a href="https://github.com/Seferovic8">Seferovic8</a></strong>. Sentiment labels and scores were calculated using 
+        <strong><a href="https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7">MoritzLaurer's</a></strong> multilingual zero-shot classification model. 
+        The data itself consists of XXX.XXX news articles stretching from the period of month year, to month year. </p>
 
-    <h2>Methodology</h2>
-    <ul>
-        <li><strong>Web Scraping:</strong> Articles are scraped from <strong>klix.ba</strong> using Python and relevant libraries for web scraping.</li>
-        <li><strong>Text Analysis:</strong> Natural Language Processing (NLP) techniques are employed to identify key topics, patterns, and trends.</li>
-        <li><strong>Time Series Analysis:</strong> Trends over time are evaluated to determine shifts in news focus and audience interests.</li>
-    </ul>
-
-    <h2>Visualizations</h2>
+    <h2>Engagement with the News</h2>
+    <p>All articles on klix.ba are categorized into one of 7 categories - a cursory glance at the total amount of news articles per category reveals that a majority of articles belong to the "Vijesti"
+        category, namely the general news category. Surprisingly, the "Sport" category is the second largest category, and makes up more than 20% of all articles on klix.ba, indicating a substantial
+        interest in sports news. Besides the "Magazin" category, which includes news reporting on cultural events and makes up some 12% of all articles, all other article categories take up a limited
+        amount of space. </p>
     <img src="images/solar.png" alt="Solar Plot" class="large-img">
     <img src="images/stacked_area.png" alt="Stacked Area Plot" class="large-img">
     <img src="images/comments_time_scatter.png" alt="Comments Time Scatter Plot" class="large-img">

@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping News Consumption in Bosnia</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">  <!-- Your existing CSS -->
+    <style>
+        body {
+            max-width: 800px; /* Change this value to adjust width */
+            margin: 0 auto;   /* Center the content */
+            padding: 20px;    /* Add some padding */
+        }
 
+        img {
+            max-width: 100%;  /* Ensure images are responsive */
+            height: auto;      /* Maintain aspect ratio */
+        }
+
+        /* Optional: Larger images */
+        .large-img {
+            width: 90%;      /* Adjust this value to make images larger */
+            height: auto;    /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+    <ul style="list-style-type: none; padding: 0; display: flex;">
+        <li style="margin-right: 20px;"><a href="index.html">English</a></li>
+        <li><a href="index_bos.html">Bosanski</a></li>
+    </ul>
+</nav>
+
+
+    <h1>MAPIRANJE VIJESTI AGENDA U BOSNIa</h1>
+    <p>September 2024</p>
+
+    <h2>What is this project about? BOSANSKI BOSANSKI BOSANSKI</h2>
+    <p>More than ever before, people rely on the internet for their daily news and information. With the rapid proliferation of internet access across the globe,
+        more and more people are turning away from traditional, analogue, news outlets in favor of social media such as Twitter and Facebook, or large online-only news platforms. 
+        Given that these web-based news portals have become the primary source of information for a majority of the population, they are naturally of great interest to social scientists, 
+        who wish to know more about the media landscape, and what societal priorities the media landscape reflects.</p>
+
+    <p>This project aims to make use of the easily accessible online news data by focusing on <strong><a href="https://klix.ba">klix.ba</a></strong>, the most visited and most influential news portal in Bosnia. 
+        By scraping, systematizing, and analyzing all news articles on the website, I aim to map out what type of news Bosnians engage with, and how they engage with it, 
+        hopefully providing a unique insight into the broader media trends in the country. The reason for choosing Bosnia is that general efforts into collecting and archiving news articles 
+        have been largely absent to my knowledge, underscoring the importance of such work in the future.</p>
+
+    <h2>Key Questions</h2>
+    <ol>
+        <li><strong>Engagement with the News</strong><br>What types of articles do Bosnians read the most? What content generates the highest engagement?</li>
+        <li><strong>Identification of Popular Topics</strong><br>What types of news are published most frequently? Has the news agenda changed over time?</li>
+        <li><strong>News Production over Time</strong><br>Which topics dominate the news landscape? Are there seasonal or event-driven spikes in certain topics?</li>
+        <li><strong>Geographic Distribution of News Content</strong><br>What geographic areas and locations does the news agenda focus on the most? Are some places given more attention than others?</li>
+        <li><strong>Coverage of Politics</strong><br>What political parties are mentioned most often in the news? What political leaders are given the most attention?</li>
+        <li><strong>Sentiment Analysis</strong><br>Are news articles mostly positive or negative in sentiment? How has sentiment changed over time, and across topics?</li>
+    </ol>
+
+    <h2>Data Sources</h2>
+    <p>The data is sourced directly from klix.ba via a python web scraper, written using BeautifulSoup. The analysis is based on this web scraped data, in addition to the initial data collection
+        done by <strong><a href="https://github.com/Seferovic8">Seferovic8</a></strong>. Sentiment labels and scores were calculated using 
+        <strong><a href="https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7">MoritzLaurer's</a></strong> multilingual zero-shot classification model. 
+        The data itself consists of XXX.XXX news articles stretching from the period of month year, to month year. </p>
+
+    <h2>Engagement with the News</h2>
+    <p>All articles on klix.ba are categorized into one of 7 categories - a cursory glance at the total amount of news articles per category reveals that a majority of articles belong to the "Vijesti"
+        category, namely the general news category. Surprisingly, the "Sport" category is the second largest category, and makes up more than 20% of all articles on klix.ba, indicating a substantial
+        interest in sports news. Besides the "Magazin" category, which includes news reporting on cultural events and makes up some 12% of all articles, all other article categories take up a limited
+        amount of space. </p>
+    <img src="images/solar.png" alt="Solar Plot" class="large-img">
+    <img src="images/stacked_area.png" alt="Stacked Area Plot" class="large-img">
+    <img src="images/comments_time_scatter.png" alt="Comments Time Scatter Plot" class="large-img">
+    <img src="images/articles_country_map.png" alt="Articles Country Map" class="large-img">
+    <img src="images/articles_bih_mentions_map.png" alt="Mentions Plot" class="large-img">
+
+    <h2>Interactive Map</h2>
+    <iframe src="images/interactive_map_1.html" width="100%" height="600" style="border:none;"></iframe>
+    <iframe src="images/interactive_map_2.html" width="100%" height="600" style="border:none;"></iframe>
+
+    <h2>Visualizations</h2>
+    <img src="images/article_bih_mentions_barplot.png" alt="Stacked Area Plot" class="large-img">
+    <img src="images/bih_bubble_plot.png" alt="Bubble Plot" class="large-img">
+    <img src="images/stacked_barplot_parties.png" alt="Parties Plot" class="large-img">
+    <img src="images/stacked_barplot_parties2.png" alt="Parties Plot 2" class="large-img">
+    <img src="images/stacked_barplot_leaders.png" alt="Leaders Plot" class="large-img">
+    <img src="images/stacked_barplot_leaders2.png" alt="Leaders Plot 2" class="large-img">
+    
+
+    <h2>Conclusion</h2>
+    <p>Through this project, we seek to understand the <strong>media landscape in Bosnia</strong> and provide insights into how news is consumed and produced, offering a reflection of <strong>Bosnian society’s interests</strong> and <strong>media trends</strong>.</p>
+
+</body>
+</html>

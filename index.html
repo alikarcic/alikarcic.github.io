@@ -64,16 +64,29 @@
         <strong><a href="https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7">MoritzLaurer's</a></strong> multilingual zero-shot classification model. 
         The data itself consists of 786.718 news articles stretching from December 2002 to August 2023. </p>
 
-    <h2>Engagement with the News</h2>
+    <h2>Engagement with the News and Popular Topics</h2>
     <p>All articles on klix.ba are categorized into one of 7 categories - a cursory glance at the total amount of news articles per category reveals that a majority of articles belong to the "Vijesti"
         category, namely the general news category. Surprisingly, the "Sport" category is the second largest category, and makes up more than 20% of all articles on klix.ba, indicating a substantial
         interest in sports news. Besides the "Magazin" category, which includes news reporting on cultural events and makes up some 12% of all articles, all other article categories take up a limited
         amount of space. </p>
     <img src="images/solar.png" alt="Solar Plot" class="large-img">
+    <p>Breaking down article frequencies across time reveals a surprisingly stable distribution of categories throughout most of the time period. The news category makes up about 50% of all articles 
+        in basically every year 2005 until 2023. The plot below also reveals that klix.ba publishes approximately the same amount of articles each month, with the exception of the pre-2007 period. 
+        There also seems to be a slight indication of a general growth in the number of articles post-2020. </p>
     <img src="images/stacked_area.png" alt="Stacked Area Plot" class="large-img">
+    <p>The dataset also includes information on how many comments and shares each article receives. This provides an interesting view into the public's engagement with news articles, indicating
+    which articles generate more engagement than others. As the plot below illustrates, klix.ba articles generated a limited amount of engagement until 2013, with about 0-20 comments per article. 
+    After 2013, there is a substantial increase in the number of comments, reaching an all time high in 2019, with about 60 comments per article. With the exception of a noticeable drop around 2020, 
+    the number seems to have stabilized around 40 comments per article. This suggests that the notoriously combative klix.ba comment threads are perhaps not a thing of the past, but are less prevalent
+    than before.</p>
     <img src="images/comments_time_scatter.png" alt="Comments Time Scatter Plot" class="large-img">
+    <p>Breaking down the number of comments per article across article categories reveals that the general news category expectedly generates the highest amount of reader engagement. In fact,
+    there seems to have been a deviation in the number of comments between the general news category, and all other categories around 2014. Until 2014, all article categories generated about
+    the same amount of comments. After 2014 however, general news stands out as the most engaging news category by far. </p>  
     <img src="images/comments_time_smooth.png" alt="Comments Time Scatter Plot" class="large-img">
-    
+
+
+    <h2>Geographic Distribution of News Content</h2>
     <img src="images/articles_country_map.png" alt="Articles Country Map" class="large-img">
     <img src="images/articles_bih_mentions_map.png" alt="Mentions Plot" class="large-img">
 

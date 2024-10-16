@@ -166,27 +166,38 @@
     <p>Moving on to the sentiment analysis, it is important to underscore that not the entire text corpus was classified into the "negative", "neutral" and "positive" categories. Only 55.000 articles 
     were passed through the classifier, covering the period from August 2022, to August 2023. Looking at the aggregate amount of positive, negative and neutral articles, we see that article that have
     a negative sentiment make up approximately 50% of all news. Despite a widespread impression of the news as being disproportionately focused on negative events, such as political scandals, international
-    conflicts, or natural disasters, the data seems to indicate that the news agenda is not overly slanted towards negative news. <p>
+    conflicts, or natural disasters, the data seems to indicate that the news agenda is not overly slanted towards negative news. </p>
     <img src="images/sentiment_pie.png" alt="Leaders Plot 2" class="large-img">
 
     <p>Rather than crude categorizations of negative and positive, the density plot below shows the distribution of articles across sentiment scores. Sentiment scores are a measure of how accurately
     an article can be categorized as either negative or positive (higher numbers meaning more precision). Interestingly, the distribution of negative news articles is strongly left-skewed, meaning that
     a significant subsection of negative news are indeed highly negative, compared to the more flat distribution of positive news. In substantial terms, there are about as many positive and negative news 
     in the media - but the negative news are unmistakeably negative, while positive news are more ambigiously positive. This can perhaps explain the common notion that the media tends to favor reporting
-    on negative events. <p>
+    on negative events. </p>
     <img src="images/sentiment_density.png" alt="Leaders Plot 2" class="large-img">
 
     <p>Breaking down the number of positive and negative news articles across time reveals an unexpected pattern - the data shows what looks like an U-curve with respect to proportion of negative vs. positive
     news articles. While there are almost an equal amount of positive and negative news around summer 2022 and summer 2023, negative news take up a larger part of the news agenda in the late winter and early
-    spring of 2023, with there on average being 25 more negative than positive articles every day. <p>
+    spring of 2023, with there on average being 25 more negative than positive articles every day. </p>
     <img src="images/sentiment_aggregate_time.png" alt="Leaders Plot 2" class="large-img">
 
-    <p><p>
+    <p>Another interesting avenue of research is to look at news sentiment with respect to coverage of political parties. Investigating to what extent news media disproportionately conduct negative
+    reporting on some parties compared to other parties, is a question that has generated much contention on the political scene in Bosnia in recent years. The leader of the Narod i Pravda
+    party, and current minister of foreign policy Elmedin Konaković, has been especially vocal in his accusations of media bias, alleging that journalists from a long string of online news sites
+    unfairly target the government coalitions parties <strong><a href="https://media.ba/bs/vijesti-i-dogadaji-vijesti/konakovic-optuzio-medije-da-napadaju-bh-institucije">unfairly target the government coalitions parties</a></strong>.
+    </p>
+
+    <p>To empirically verify this claim, I identify all news articles that mention each of the six biggest political parties in Bosnia, and then calculate the proportion of negative, positive, and
+    neutral articles for each party. As the plot below reveals, there is a very small amount of variation in the percentage of negative news coverage across parties. Two parties, SDA and SDP, 
+    receive a relatively larger amount of negative news coverage - this can possibly be attributed to their status as the oldest and historically most influential political parties in Bosnia. 
+    Given their history, both parties have more political scandals associated with their name, compared to the four other newer parties. Importantly, there is no evidence for the accusations
+    made by Konaković - NiP is not the target of more negative news coverage compared to other parties. In fact, they receive slightly less negative coverage than their main rival, the SDA. </p>
     <img src="images/sentiment_all_parties.png" alt="Leaders Plot 2" class="large-img">
+        
+    <p>A more direct test of Konaković's claim is to calculate the sentiment proportions by grouping the three main government parties (colloquially knowns as the Troika), and comparing it to the
+    three main opposition parties. As the plot below illustrates, there is virtually no difference in aggregate sentiment between the two blocs. The government coalition parties collectively 
+    receive about as much negative and positive coverage, as the opposition parties. The claims about widespread media bias made by Konaković do not hold up to scrutiny. </p>    
     <img src="images/sentiment_govt_opposition.png" alt="Leaders Plot 2" class="large-img">
-
-
-
 
 
 </body>

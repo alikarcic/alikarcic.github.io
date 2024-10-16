@@ -55,7 +55,7 @@
         <li><strong>News Production over Time</strong><br>Which topics dominate the news landscape? Are there seasonal or event-driven spikes in certain topics?</li>
         <li><strong>Geographic Distribution of News Content</strong><br>What geographic areas and locations does the news agenda focus on the most? Are some places given more attention than others?</li>
         <li><strong>Coverage of Politics</strong><br>What political parties are mentioned most often in the news? What political leaders are given the most attention?</li>
-        <li><strong>Sentiment Analysis</strong><br>Are news articles mostly positive or negative in sentiment? How has sentiment changed over time, and across topics?</li>
+        <li><strong>Sentiment Analysis</strong><br>Are news articles mostly positive or negative in sentiment? Is coverage of politics biased in terms of sentiment?</li>
     </ol>
 
     <h2>Data Sources</h2>
@@ -163,10 +163,25 @@
     <img src="images/stacked_barplot_leaders2.png" alt="Leaders Plot 2" class="large-img">
 
     <h2>Sentiment Analysis</h2>
-
+    <p>Moving on to the sentiment analysis, it is important to underscore that not the entire text corpus was classified into the "negative", "neutral" and "positive" categories. Only 55.000 articles 
+    were passed through the classifier, covering the period from August 2022, to August 2023. Looking at the aggregate amount of positive, negative and neutral articles, we see that article that have
+    a negative sentiment make up approximately 50% of all news. Despite a widespread impression of the news as being disproportionately focused on negative events, such as political scandals, international
+    conflicts, or natural disasters, the data seems to indicate that the news agenda is not overly slanted towards negative news. <p>
     <img src="images/sentiment_pie.png" alt="Leaders Plot 2" class="large-img">
+
+    <p>Rather than crude categorizations of negative and positive, the density plot below shows the distribution of articles across sentiment scores. Sentiment scores are a measure of how accurately
+    an article can be categorized as either negative or positive (higher numbers meaning more precision). Interestingly, the distribution of negative news articles is strongly left-skewed, meaning that
+    a significant subsection of negative news are indeed highly negative, compared to the more flat distribution of positive news. In substantial terms, there are about as many positive and negative news 
+    in the media - but the negative news are unmistakeably negative, while positive news are more ambigiously positive. This can perhaps explain the common notion that the media tends to favor reporting
+    on negative events. <p>
     <img src="images/sentiment_density.png" alt="Leaders Plot 2" class="large-img">
+
+    <p>Breaking down the number of positive and negative news articles across time reveals an unexpected pattern - the data shows what looks like an U-curve with respect to proportion of negative vs. positive
+    news articles. While there are almost an equal amount of positive and negative news around summer 2022 and summer 2023, negative news take up a larger part of the news agenda in the late winter and early
+    spring of 2023, with there on average being 25 more negative than positive articles every day. <p>
     <img src="images/sentiment_aggregate_time.png" alt="Leaders Plot 2" class="large-img">
+
+    <p><p>
     <img src="images/sentiment_all_parties.png" alt="Leaders Plot 2" class="large-img">
     <img src="images/sentiment_govt_opposition.png" alt="Leaders Plot 2" class="large-img">
 

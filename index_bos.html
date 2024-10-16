@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapping News Consumption in Bosnia</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">  <!-- Your existing CSS -->
+    <title>Mapiranje Vijesti u Bosni</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">  <!-- Vaš postojeći CSS -->
     <style>
         body {
-            max-width: 800px; /* Change this value to adjust width */
-            margin: 0 auto;   /* Center the content */
-            padding: 20px;    /* Add some padding */
+            max-width: 800px; /* Promijenite ovu vrijednost da prilagodite širinu */
+            margin: 0 auto;   /* Centrirajte sadržaj */
+            padding: 20px;    /* Dodajte malo razmaka */
         }
 
         img {
-            max-width: 100%;  /* Ensure images are responsive */
-            height: auto;      /* Maintain aspect ratio */
+            max-width: 100%;  /* Osigurajte da su slike responzivne */
+            height: auto;     /* Održavajte proporcije */
         }
 
-        /* Optional: Larger images */
+        /* Opcionalno: Veće slike */
         .large-img {
-            width: 90%;      /* Adjust this value to make images larger */
-            height: auto;    /* Maintain aspect ratio */
+            width: 90%;       /* Podesite ovu vrijednost da slike budu veće */
+            height: auto;     /* Održavajte proporcije */
         }
     </style>
 </head>
@@ -28,68 +28,89 @@
 
     <nav>
     <ul style="list-style-type: none; padding: 0; display: flex;">
-        <li style="margin-right: 20px;"><a href="index.html">English</a></li>
+        <li style="margin-right: 20px;"><a href="index.html">Engleski</a></li>
         <li><a href="index_bos.html">Bosanski</a></li>
     </ul>
 </nav>
 
+    <h1>Mapiranje Vijesti u Bosni</h1>
+    <p>Septembar 2024</p>
 
-    <h1>MAPIRANJE VIJESTI AGENDA U BOSNIa</h1>
-    <p>September 2024</p>
+    <h2>O čemu je ovaj projekat?</h2>
+    <p>Više nego ikada ranije, ljudi se oslanjaju na internet za svoje dnevne vijesti i informacije. S brzim širenjem pristupa internetu širom svijeta,
+        sve više ljudi se okreće od tradicionalnih, analognih medija prema društvenim mrežama poput Twittera i Facebooka, ili velikim online vijestima.
+        S obzirom da su ovi internet portali postali glavni izvor informacija za većinu populacije, oni su prirodno od velikog interesa za društvene naučnike,
+        koji žele saznati više o medijskom pejzažu i koje društvene prioritete taj pejzaž odražava.</p>
 
-    <h2>What is this project about? BOSANSKI BOSANSKI BOSANSKI</h2>
-    <p>More than ever before, people rely on the internet for their daily news and information. With the rapid proliferation of internet access across the globe,
-        more and more people are turning away from traditional, analogue, news outlets in favor of social media such as Twitter and Facebook, or large online-only news platforms. 
-        Given that these web-based news portals have become the primary source of information for a majority of the population, they are naturally of great interest to social scientists, 
-        who wish to know more about the media landscape, and what societal priorities the media landscape reflects.</p>
+    <p>Cilj ovog projekta je iskoristiti lako dostupne online podatke vijesti fokusiranjem na <strong><a href="https://klix.ba">klix.ba</a></strong>, najposjećeniji i najutjecajniji portal vijesti u Bosni.
+        Prikupljanjem, sistematizacijom i analizom svih vijesti na ovoj stranici, nastojim mapirati koje vrste vijesti Bosanci konzumiraju, te kako ih konzumiraju,
+        pružajući jedinstven uvid u šire medijske trendove u zemlji. Razlog odabira Bosne je taj što su opći napori na prikupljanju i arhiviranju vijesti,
+        koliko je meni poznato, uglavnom izostali, što naglašava važnost ovakvog rada u budućnosti.</p>
 
-    <p>This project aims to make use of the easily accessible online news data by focusing on <strong><a href="https://klix.ba">klix.ba</a></strong>, the most visited and most influential news portal in Bosnia. 
-        By scraping, systematizing, and analyzing all news articles on the website, I aim to map out what type of news Bosnians engage with, and how they engage with it, 
-        hopefully providing a unique insight into the broader media trends in the country. The reason for choosing Bosnia is that general efforts into collecting and archiving news articles 
-        have been largely absent to my knowledge, underscoring the importance of such work in the future.</p>
-
-    <h2>Key Questions</h2>
+    <h2>Ključna Pitanja</h2>
     <ol>
-        <li><strong>Engagement with the News</strong><br>What types of articles do Bosnians read the most? What content generates the highest engagement?</li>
-        <li><strong>Identification of Popular Topics</strong><br>What types of news are published most frequently? Has the news agenda changed over time?</li>
-        <li><strong>News Production over Time</strong><br>Which topics dominate the news landscape? Are there seasonal or event-driven spikes in certain topics?</li>
-        <li><strong>Geographic Distribution of News Content</strong><br>What geographic areas and locations does the news agenda focus on the most? Are some places given more attention than others?</li>
-        <li><strong>Coverage of Politics</strong><br>What political parties are mentioned most often in the news? What political leaders are given the most attention?</li>
-        <li><strong>Sentiment Analysis</strong><br>Are news articles mostly positive or negative in sentiment? How has sentiment changed over time, and across topics?</li>
+        <li><strong>Konzumacija Vijesti</strong><br>Koje vrste članaka Bosanci najviše čitaju? Koji sadržaj generira najveći angažman?</li>
+        <li><strong>Identifikacija Popularnih Tema</strong><br>Koje vrste vijesti se najčešće objavljuju? Da li se medijska agenda mijenjala kroz vrijeme?</li>
+        <li><strong>Proizvodnja Vijesti kroz Vrijeme</strong><br>Koje teme dominiraju medijskim pejzažom? Da li postoje sezonski ili događajno vođeni skokovi u određenim temama?</li>
+        <li><strong>Geografska Raspodjela Medijskog Sadržaja</strong><br>Na koje geografske oblasti i lokacije se fokusira medijska agenda? Da li neki dijelovi dobijaju više pažnje nego drugi?</li>
+        <li><strong>Pokriće Politike</strong><br>Koje političke stranke se najčešće spominju u vijestima? Koji politički lideri dobijaju najviše pažnje?</li>
+        <li><strong>Analiza Sentimenta</strong><br>Da li su članci vijesti uglavnom pozitivni ili negativni u tonu? Da li je medijsko pokriće politike pristrasno u smislu sentimenta?</li>
     </ol>
 
-    <h2>Data Sources</h2>
-    <p>The data is sourced directly from klix.ba via a python web scraper, written using BeautifulSoup. The analysis is based on this web scraped data, in addition to the initial data collection
-        done by <strong><a href="https://github.com/Seferovic8">Seferovic8</a></strong>. Sentiment labels and scores were calculated using 
-        <strong><a href="https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7">MoritzLaurer's</a></strong> multilingual zero-shot classification model. 
-        The data itself consists of XXX.XXX news articles stretching from the period of month year, to month year. </p>
+    <h2>Izvori Podataka</h2>
+    <p>Podaci su direktno preuzeti s klix.ba putem python web scrapper-a, napisanog pomoću BeautifulSoup-a. Analiza je zasnovana na ovim prikupljenim podacima, uz dodatnu početnu zbirku podataka
+        koju je napravio <strong><a href="https://github.com/Seferovic8">Seferovic8</a></strong>. Sentiment oznake i ocjene su izračunate koristeći 
+        <strong><a href="https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7">MoritzLaurerov</a></strong> model za višejezičnu klasifikaciju. 
+        Podaci se sastoje od 786.718 članaka vijesti u periodu od decembra 2002. do avgusta 2023. </p>
 
-    <h2>Engagement with the News</h2>
-    <p>All articles on klix.ba are categorized into one of 7 categories - a cursory glance at the total amount of news articles per category reveals that a majority of articles belong to the "Vijesti"
-        category, namely the general news category. Surprisingly, the "Sport" category is the second largest category, and makes up more than 20% of all articles on klix.ba, indicating a substantial
-        interest in sports news. Besides the "Magazin" category, which includes news reporting on cultural events and makes up some 12% of all articles, all other article categories take up a limited
-        amount of space. </p>
-    <img src="images/solar.png" alt="Solar Plot" class="large-img">
-    <img src="images/stacked_area.png" alt="Stacked Area Plot" class="large-img">
-    <img src="images/comments_time_scatter.png" alt="Comments Time Scatter Plot" class="large-img">
-    <img src="images/articles_country_map.png" alt="Articles Country Map" class="large-img">
-    <img src="images/articles_bih_mentions_map.png" alt="Mentions Plot" class="large-img">
+    <h2>Konzumacija Vijesti i Popularne Teme</h2>
+    <p>Svi članci na klix.ba su svrstani u jednu od 7 kategorija - kratak pogled na ukupan broj vijesti po kategorijama otkriva da većina članaka pripada kategoriji "Vijesti",
+        odnosno općoj kategoriji vijesti. Iznenađujuće, kategorija "Sport" je druga najveća kategorija, i čini više od 20% svih članaka na klix.ba, što ukazuje na značajan interes za sportske vijesti. 
+        Pored kategorije "Magazin", koja obuhvata izvještavanje o kulturnim događajima i čini oko 12% svih članaka, sve druge kategorije zauzimaju mali dio prostora.</p>
 
-    <h2>Interactive Map</h2>
-    <iframe src="images/interactive_map_1.html" width="100%" height="600" style="border:none;"></iframe>
-    <iframe src="images/interactive_map_2.html" width="100%" height="600" style="border:none;"></iframe>
 
-    <h2>Visualizations</h2>
-    <img src="images/article_bih_mentions_barplot.png" alt="Stacked Area Plot" class="large-img">
-    <img src="images/bih_bubble_plot.png" alt="Bubble Plot" class="large-img">
-    <img src="images/stacked_barplot_parties.png" alt="Parties Plot" class="large-img">
-    <img src="images/stacked_barplot_parties2.png" alt="Parties Plot 2" class="large-img">
-    <img src="images/stacked_barplot_leaders.png" alt="Leaders Plot" class="large-img">
-    <img src="images/stacked_barplot_leaders2.png" alt="Leaders Plot 2" class="large-img">
+    **<h2>Interaktivne mape</h2>**
+<p>Ispod se nalaze dva interaktivna widgeta mape koja prikazuju sva spomenuta mjesta, zajedno s tačnim brojem spominjanja članaka po mjestu. Mapa 1 omogućava zumiranje unutra i van, dok Mapa 2 skalira oznake mjesta prema ukupnom broju.</p>
+
+<iframe src="images/interactive_map_1.html" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="images/interactive_map_2.html" width="100%" height="600" style="border:none;"></iframe>
+
+<p>Mapa ispod prikazuje opštu geografsku distribuciju spominjanja članaka preko svih pomenutih imena mjesta. Drugim riječima, mapa pokazuje koja područja zemlje dobivaju najviše medijske pažnje. Čini se da je medijska pažnja uglavnom usmjerena prema središnjoj Bosni, preciznije kvadrantu Sarajevo-Tuzla-Doboj-Travnik. Ovo je daleko najnaseljenije područje u zemlji, i također najekonomičnije razvijeno izvan samog glavnog grada. U suprotnosti s ovim, područja Bosne koja dobijaju najmanje medijske pokrivenosti su periferne dijelove zemlje, poput zapadne Bosne, sjeverne Bosne (osim Brčkog) i istočno-jugoistočne Bosne. Jedan važan izuzetak od ovog pravila je regija Krajina, tj. sjeverozapadni dio Bosne, gdje su mjesta poput Bihaća, Velike Kladuše, Cazina, Bužima i Krupe često spominjana u medijima.</p>
+
+<img src="images/bih_bubble_plot.png" alt="Bubble Plot" class="large-img">
+
+---
+
+**<h2>Pokrivenost politike</h2>**
+
+<p>Kako izgleda medijsko praćenje političke scene? S obzirom na to da je politički sistem u Bosni notorno složen, bilo bi zanimljivo vidjeti kako medijski pejzaž odražava tu složenost. Osim toga, Bosna se nalazi prilično nisko na većini indeksa slobode štampe, <strong><a href="https://en.wikipedia.org/wiki/World_Press_Freedom_Index">(Svjetski indeks slobode štampe)</a></strong>, usporediva s drugim zemljama istočne Evrope, a često se iznose zabrinutosti oko pristranog izvještavanja i pristupa medijskom prostoru. U tom svjetlu, relevantno pitanje je koliko često se bosanske političke stranke spominju u novinskim člancima na klix.ba.</p>
+
+<p>Grafikon ispod prikazuje broj spominjanja članaka po političkoj stranci na godišnjem nivou. Kao što grafikon pokazuje, pokrivenost političkih stranaka je značajno i konzistentno raznolika, s nijednom strankom koja ne predstavlja više od 50% ukupnih političkih članaka u bilo kojem trenutku. Neke stranke, međutim, privlače više medijske pažnje od drugih - SNSD, SDP i SDA se često spominju, naglašavajući njihovu ulogu kao najvećih stranaka u Bosni. SDA posebno prima najviše pažnje od svih stranaka, što je razumljivo s obzirom na to da SDA redovno dobiva najviše glasova od svih stranaka u Bosni. Iznenađujuće je da mnogi članci svake godine također spominju HDZ, uprkos tome što HDZ predstavlja mnogo manji segment biračkog tijela u poređenju sa SDP-om ili SNSD-om. Ovo možda odražava važan politički položaj HDZ-a kao predstavnika hrvatske manjine u Bosni.</p>
+
+<img src="images/stacked_barplot_parties.png" alt="Parties Plot" class="large-img">
+
+---
+
+**<h2>Analiza sentimenta</h2>**
+<p>Prelazeći na analizu sentimenta, važno je naglasiti da cijeli tekstualni korpus nije klasificiran u kategorije "negativno", "neutralno" i "pozitivno". Samo 55.000 članaka je prošlo kroz klasifikator, pokrivajući period od avgusta 2022. do avgusta 2023. Posmatrajući agregatnu količinu pozitivnih, negativnih i neutralnih članaka, vidimo da članci koji imaju negativan sentiment čine približno 50% svih vijesti. Uprkos široko rasprostranjenom dojmu da su vijesti neproporcionalno fokusirane na negativne događaje, kao što su politički skandali, međunarodni konflikti ili prirodne katastrofe, podaci pokazuju da vijesti nisu previše nagnute ka negativnom sadržaju.</p>
+
+<img src="images/sentiment_pie.png" alt="Sentiment Pie Chart" class="large-img">
+
+<p>Umjesto grubih kategorizacija negativnog i pozitivnog, gustinski grafikon ispod pokazuje distribuciju članaka po ocjenama sentimenta. Sentiment ocjene su mjera koliko se precizno članak može kategorizirati kao negativan ili pozitivan (veće brojke znače veću preciznost). Zanimljivo je da distribucija negativnih članaka ima izrazitu lijevu asimetriju, što znači da značajan dio negativnih članaka zaista ima vrlo negativan ton, u poređenju s ravnomjernijom distribucijom pozitivnih članaka. Suštinski, ima otprilike jednako pozitivnih i negativnih vijesti u medijima - ali negativne vijesti su nedvosmisleno negativne, dok su pozitivne vijesti manje izraženo pozitivne. Ovo može objasniti uobičajeni dojam da mediji favoriziraju izvještavanje o negativnim događajima.</p>
+
+<img src="images/sentiment_density.png" alt="Sentiment Density Plot" class="large-img">
+
+<p>Razlaganje broja pozitivnih i negativnih vijesti tokom vremena otkriva neočekivan obrazac - podaci pokazuju nešto poput U-krivulje s obzirom na omjer negativnih naspram pozitivnih vijesti. Dok je otprilike jednako pozitivnih i negativnih vijesti tokom ljeta 2022. i ljeta 2023., negativne vijesti zauzimaju veći dio medijskog prostora u kasnoj zimi i rano proljeće 2023., s prosjekom od 25 više negativnih nego pozitivnih članaka dnevno.</p>
+
+<img src="images/sentiment_aggregate_time.png" alt="Sentiment over Time" class="large-img">
+
+
+
+
+
+
+
+
+
+
     
-
-    <h2>Conclusion</h2>
-    <p>Through this project, we seek to understand the <strong>media landscape in Bosnia</strong> and provide insights into how news is consumed and produced, offering a reflection of <strong>Bosnian society’s interests</strong> and <strong>media trends</strong>.</p>
-
-</body>
-</html>

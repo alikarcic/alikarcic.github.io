@@ -47,3 +47,22 @@ nav ul li a:hover {
     background-color: #0056b3; /* Darker blue background on hover */
     color: #ffffff; /* White text on hover */
 }
+
+/* Header */
+#header-container { padding: 1em 1em 0 1em; }
+@supports (padding: max(0px)) { #header-container { padding-left: max(1em, env(safe-area-inset-left)); padding-right: max(1em, env(safe-area-inset-right)); padding-top: max(1em, env(safe-area-inset-bottom)); } }
+#header { max-width: 50em; margin-left: auto; margin-right: auto; display: flex; align-items: center; flex-wrap: wrap-reverse; border-bottom: 1px }
+#header a { text-decoration: none; }
+#header .header-link { display: inline-block;font-family:  }
+#header .header-link-pad { margin-right: 1em; }
+#header h1 { font-size: 150%; line-height: 1.0; margin: 1em 0 0.3em 0; }
+#header-img { display: inline-block; padding: 0; vertical-align: top; margin-right: 1em; overflow:hidden; width:165px}
+/* #header-img img { max-height: 9em; height: auto; display: block; left:-23%; position:relative} */
+#header-img img { max-height: 9em; height: auto; display: block; position:relative}
+#header-content { display: inline-block; vertical-align: top; padding-bottom: 1em; }
+.header-block { display: inline-block; margin-right: 1em; vertical-align: bottom; }
+
+
+#content { padding: 1em; max-width: 50em; margin-left: auto; margin-right: auto; }
+#content a { text-decoration: none; }
+#content-scroll {padding: 0em; max-width: 50em; margin-left: auto; margin-right: auto; overflow-y:scroll; max-height:140px; height:140px}

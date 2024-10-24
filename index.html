@@ -7,34 +7,45 @@
     <link rel="stylesheet" type="text/css" href="styles.css">  <!-- Your existing CSS -->
     <style>
         body {
-            max-width: 800px; /* Change this value to adjust width */
-            margin: 0 auto;   /* Center the content */
-            padding: 20px;    /* Add some padding */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         img {
-            max-width: 100%;  /* Ensure images are responsive */
-            height: auto;      /* Maintain aspect ratio */
+            max-width: 100%;
+            height: auto;
         }
 
-        /* Optional: Larger images */
-        .large-img {
-            width: 90%;      /* Adjust this value to make images larger */
-            height: auto;    /* Maintain aspect ratio */
+        .sidebar {
+            width: 150px; /* Set a fixed width for the box */
+            float: left; /* Align it to the left */
+            margin-right: 20px; /* Add space between the sidebar and the text */
+            padding: 10px; /* Add some padding inside the box */
+            background-color: #f1f1f1; /* Light background color */
+            border-radius: 10px; /* Rounded corners */
+            text-align: center; /* Center-align content */
         }
+
+        .sidebar img {
+            width: 100px; /* Smaller image size */
+            border-radius: 50%; /* Circular image */
+        }
+
+        .sidebar a {
+            display: block; /* Ensure links are block elements */
+            margin-top: 10px; /* Space between links */
+            text-decoration: none;
+        }
+
+        .content {
+            overflow: hidden; /* Ensure the content wraps properly around the sidebar */
+        }
+
     </style>
 </head>
 <body>
-****************************
-<div class="sidebar">
-        <img src="your-picture.jpg" alt="Your Name" class="profile-pic">
-        <h2>Your Name</h2>
-        <ul>
-            <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
-            <li><a href="https://github.com/yourhandle" target="_blank">GitHub</a></li>
-            <!-- Add other links here -->
-        </ul>
-    </div>
+
 ****************************
     <nav>
     <ul style="list-style-type: none; padding: 0; display: flex;">
@@ -42,7 +53,16 @@
         <li><a href="index_bos.html">Bosanski</a></li>
     </ul>
 </nav>
+*************
+<div class="sidebar">
+    <img src="your-image.jpg" alt="Your Name">
+    <p>Your Name</p>
+    <a href="https://twitter.com/yourprofile">Twitter</a>
+    <a href="https://github.com/yourprofile">GitHub</a>
+</div>
+*****************    
 
+    
     <h1>Mapping the News Agenda in Bosnia</h1>
     <p>September 2024</p>
 

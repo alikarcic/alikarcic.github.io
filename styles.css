@@ -56,7 +56,7 @@ nav ul li a:hover {
 
 /* New styles for header links */
 .header-link a {
-    color: #9B59B6; /* Change the color to white */
+    color: #663399; /* Change the color to purple */
     text-decoration: none; /* Remove underline */
 }
 
@@ -65,7 +65,7 @@ nav ul li a:hover {
 }
 
 #header-content a {
-    color: #9B59B6; /* Change link color to white */
+    color: #663399; /* Change link color to purple */
     text-decoration: none; /* Remove underline if desired */
 }
 

@@ -37,7 +37,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     background-color: #ffffff; /* White background for buttons */
-    color: #007FFF; /* Blue text to match your theme */
+    color: #FFFFFF; /* Blue text to match your theme */
     padding: 10px 20px; /* Add padding to make the buttons bigger */
     border-radius: 5px; /* Rounded corners for a modern look */
     transition: background-color 0.3s ease; /* Smooth transition effect */

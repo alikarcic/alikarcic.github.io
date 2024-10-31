@@ -64,6 +64,15 @@ nav ul li a:hover {
     color: #ccc; /* Optional: Change color on hover */
 }
 
+#header-content a {
+    color: white; /* Change link color to white */
+    text-decoration: none; /* Remove underline if desired */
+}
+
+#header-content a:hover {
+    color: #ccc; /* Optional: Change color on hover for better visibility */
+}
+
 #header .header-link { display: inline-block;font-family:  }
 #header .header-link-pad { margin-right: 1em; }
 #header h1 { font-size: 150%; line-height: 1.0; margin: 1em 0 0.3em 0; }

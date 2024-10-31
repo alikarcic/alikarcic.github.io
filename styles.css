@@ -37,7 +37,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     background-color: #ffffff; /* White background for buttons */
-    color: #FFFFFF; /* Blue text to match your theme */
+    color: #007FFF; /* Blue text to match your theme */
     padding: 10px 20px; /* Add padding to make the buttons bigger */
     border-radius: 5px; /* Rounded corners for a modern look */
     transition: background-color 0.3s ease; /* Smooth transition effect */
@@ -53,6 +53,17 @@ nav ul li a:hover {
 @supports (padding: max(0px)) { #header-container { padding-left: max(1em, env(safe-area-inset-left)); padding-right: max(1em, env(safe-area-inset-right)); padding-top: max(1em, env(safe-area-inset-bottom)); } }
 #header { max-width: 50em; margin-left: auto; margin-right: auto; display: flex; align-items: center; flex-wrap: wrap-reverse; border-bottom: 1px }
 #header a { text-decoration: none; }
+
+/* New styles for header links */
+.header-link a {
+    color: #FFFFFF; /* Change the color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+.header-link a:hover {
+    color: #ccc; /* Optional: Change color on hover */
+}
+
 #header .header-link { display: inline-block;font-family:  }
 #header .header-link-pad { margin-right: 1em; }
 #header h1 { font-size: 150%; line-height: 1.0; margin: 1em 0 0.3em 0; }
